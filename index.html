@@ -59,6 +59,16 @@
             color: transparent;
         }
 
+        /* Text Outline untuk kontras di atas background cerah */
+        .text-outline {
+            text-shadow: 
+                1px 1px 0 #000, 
+                -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000, 
+                0 2px 15px rgba(0,0,0,0.9);
+        }
+
         /* Gold Border Glow */
         .border-gold-glow {
             border: 1px solid #b38728;
@@ -203,12 +213,9 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="beranda" class="relative pt-24 pb-32 flex items-center min-h-screen">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="image/keris.jpeg" alt="Keraton Background" class="w-full h-full object-cover opacity-25 filter grayscale">
-            <div class="absolute inset-0 bg-gradient-to-b from-dark/90 via-dark/95 to-dark"></div>
-        </div>
+    <section id="beranda" class="relative pt-24 pb-32 flex items-center min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('image/keris.jpeg');">
+        <!-- Background Overlay (Sangat tipis hanya untuk memastikan teks putih tetap bisa terbaca) -->
+        <div class="absolute inset-0 z-0 bg-black/20"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <!-- Trust Badge -->
@@ -217,12 +224,12 @@
                 <span class="text-gray-300">Resmi Di Bawah <span class="text-[#fcf6ba] font-bold">Yayasan Ikatan Spiritual Indonesia</span></span>
             </div>
             
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight">
-                PADEPOKAN <br>
-                <span class="text-gold-gradient drop-shadow-lg">PAYUNG AGUNG NUSANTARA</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight text-white">
+                <span class="text-outline">PADEPOKAN</span> <br>
+                <span class="text-gold-gradient drop-shadow-[0_0_15px_rgba(252,246,186,0.8)] [text-shadow:none]">PAYUNG AGUNG NUSANTARA</span>
             </h1>
             
-            <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-300 font-light mb-10 leading-relaxed">
+            <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-white font-medium mb-10 leading-relaxed text-outline">
                 Pusat kurasi dan mahar benda pusaka, mustika, azimat, dan sarana spiritual Nusantara tingkat tinggi. Kami menjembatani Anda dengan warisan adiluhung leluhur melalui pelayanan profesional, amanah, dan terjamin legalitasnya.
             </p>
             
@@ -235,9 +242,11 @@
                 </a>
             </div>
 
-            <!-- Legalitas Text Small -->
-            <div class="mt-12 text-gray-500 text-xs tracking-widest uppercase">
-                SK KEMENKUMHAM RI NOMOR AHU-0007649.AH.01.04.TAHUN 2024
+            <!-- Legalitas Text (Diperbesar) -->
+            <div class="mt-12 inline-block bg-black/70 backdrop-blur-sm border border-[#b38728]/60 px-6 py-3.5 rounded-lg shadow-2xl">
+                <p class="text-[#fcf6ba] text-sm md:text-base lg:text-lg font-bold tracking-wider uppercase text-outline">
+                    <i class="fa-solid fa-scale-balanced mr-2 text-[#b38728]"></i> SK KEMENKUMHAM RI NOMOR AHU-0007649.AH.01.04.TAHUN 2024
+                </p>
             </div>
         </div>
         
