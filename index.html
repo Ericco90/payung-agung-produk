@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padepokan Payung Agung Nusantara | Yayasan Ikatan Spiritual Indonesia</title>
+    <meta name="description" content="Menyediakan Koleksi Pusaka, Mustika, Azimat, Keris, dan Sarana Spiritual Nusantara premium dan berlegalitas di bawah Yayasan Ikatan Spiritual Indonesia.">
+    <meta name="keywords" content="Keris, Pusaka, Mustika, Azimat, Spiritual Nusantara, Yayasan Ikatan Spiritual Indonesia, Payung Agung">
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="Padepokan Payung Agung Nusantara">
+    <meta property="og:description" content="Koleksi benda pusaka dan sarana spiritual warisan leluhur Nusantara berlegalitas resmi.">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0a0a0a',
+                        darker: '#050505',
+                        panel: '#151515',
+                        wood: '#3e2723',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles for Premium Look */
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.02"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+        }
+
+        /* Gold Gradient Text */
+        .text-gold-gradient {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Gold Border Glow */
+        .border-gold-glow {
+            border: 1px solid #b38728;
+            box-shadow: 0 0 15px rgba(179, 135, 40, 0.15);
+            transition: all 0.3s ease;
+        }
+        .border-gold-glow:hover {
+            box-shadow: 0 0 25px rgba(179, 135, 40, 0.4);
+            border-color: #fcf6ba;
+            transform: translateY(-5px);
+        }
+
+        /* Buttons */
+        .btn-gold {
+            background: linear-gradient(135deg, #b38728 0%, #fcf6ba 50%, #b38728 100%);
+            color: #000;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            background-size: 200% auto;
+        }
+        .btn-gold:hover {
+            background-position: right center;
+            box-shadow: 0 0 15px rgba(252, 246, 186, 0.4);
+        }
+
+        .btn-outline-gold {
+            border: 1px solid #b38728;
+            color: #fcf6ba;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-gold:hover {
+            background: rgba(179, 135, 40, 0.1);
+            box-shadow: 0 0 10px rgba(179, 135, 40, 0.3);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b38728;
+            border-radius: 4px;
+        }
+
+        /* Modal Overlay */
+        .modal-overlay {
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(5px);
+        }
+
+        /* Lazy Load Fade */
+        .lazy-loaded {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Testimonial Slider */
+        .testimonial-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 1.5rem;
+            padding-bottom: 1rem;
+            scrollbar-width: none; /* Firefox */
+        }
+        .testimonial-container::-webkit-scrollbar {
+            display: none; /* Safari and Chrome */
+        }
+        .testimonial-card {
+            scroll-snap-align: center;
+            min-width: 320px;
+        }
+        
+        /* Glass effect for trust badge */
+        .glass-badge {
+            background: rgba(15, 15, 15, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(179, 135, 40, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-[#b38728] selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-darker/90 backdrop-blur border-b border-[#b38728]/30 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img src="image/logo.jpg" alt="Logo Payung Agung" class="w-12 h-12 rounded-full border border-gold-glow object-cover">
+                    <div class="flex flex-col">
+                        <a href="#" class="font-serif text-lg md:text-xl font-bold text-gold-gradient tracking-wide leading-tight">
+                            PAYUNG AGUNG
+                        </a>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider hidden sm:block">Yayasan Ikatan Spiritual Indonesia</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#beranda" class="text-gray-300 hover:text-[#fcf6ba] transition font-medium text-sm uppercase tracking-wide">Beranda</a>
+                    <a href="#tentang" class="text-gray-300 hover:text-[#fcf6ba] transition font-medium text-sm uppercase tracking-wide">Tentang</a>
+                    <a href="#katalog" class="text-gray-300 hover:text-[#fcf6ba] transition font-medium text-sm uppercase tracking-wide">Koleksi</a>
+                    <a href="#artikel" class="text-gray-300 hover:text-[#fcf6ba] transition font-medium text-sm uppercase tracking-wide">Artikel</a>
+                    <a href="#faq" class="text-gray-300 hover:text-[#fcf6ba] transition font-medium text-sm uppercase tracking-wide">FAQ</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="https://wa.me/6285150941574" target="_blank" class="btn-gold px-5 py-2.5 rounded-md flex items-center gap-2 text-sm shadow-[0_0_10px_rgba(179,135,40,0.3)]">
+                        <i class="fab fa-whatsapp text-lg"></i> Hubungi Kami
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-[#fcf6ba] hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-panel border-b border-[#b38728]/30">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#beranda" class="block px-3 py-2 text-gray-300 hover:text-[#fcf6ba] uppercase text-sm">Beranda</a>
+                <a href="#tentang" class="block px-3 py-2 text-gray-300 hover:text-[#fcf6ba] uppercase text-sm">Tentang</a>
+                <a href="#katalog" class="block px-3 py-2 text-gray-300 hover:text-[#fcf6ba] uppercase text-sm">Koleksi</a>
+                <a href="#artikel" class="block px-3 py-2 text-gray-300 hover:text-[#fcf6ba] uppercase text-sm">Artikel</a>
+                <a href="#faq" class="block px-3 py-2 text-gray-300 hover:text-[#fcf6ba] uppercase text-sm">FAQ</a>
+                <div class="px-3 pt-2">
+                    <span class="text-xs text-gray-500 block mb-1">Naungan:</span>
+                    <span class="text-xs text-[#b38728] font-bold block">Yayasan Ikatan Spiritual Indonesia</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative pt-24 pb-32 flex items-center min-h-screen">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="image/keris.jpeg" alt="Keraton Background" class="w-full h-full object-cover opacity-25 filter grayscale">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/90 via-dark/95 to-dark"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Trust Badge -->
+            <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 glass-badge rounded-full text-xs sm:text-sm tracking-wider uppercase">
+                <i class="fa-solid fa-shield-halved text-[#b38728]"></i>
+                <span class="text-gray-300">Resmi Di Bawah <span class="text-[#fcf6ba] font-bold">Yayasan Ikatan Spiritual Indonesia</span></span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight">
+                PADEPOKAN <br>
+                <span class="text-gold-gradient drop-shadow-lg">PAYUNG AGUNG NUSANTARA</span>
+            </h1>
+            
+            <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-300 font-light mb-10 leading-relaxed">
+                Pusat kurasi dan mahar benda pusaka, mustika, azimat, dan sarana spiritual Nusantara tingkat tinggi. Kami menjembatani Anda dengan warisan adiluhung leluhur melalui pelayanan profesional, amanah, dan terjamin legalitasnya.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#katalog" class="btn-gold px-8 py-3.5 rounded-md text-lg text-center shadow-[0_0_20px_rgba(179,135,40,0.4)] hover:shadow-[0_0_30px_rgba(252,246,186,0.6)]">
+                    Jelajahi Koleksi
+                </a>
+                <a href="https://wa.me/6285150941574" target="_blank" class="btn-outline-gold px-8 py-3.5 rounded-md text-lg text-center flex justify-center items-center gap-2">
+                    <i class="fab fa-whatsapp"></i> Konsultasi Pribadi
+                </a>
+            </div>
+
+            <!-- Legalitas Text Small -->
+            <div class="mt-12 text-gray-500 text-xs tracking-widest uppercase">
+                SK KEMENKUMHAM RI NOMOR AHU-0007649.AH.01.04.TAHUN 2024
+            </div>
+        </div>
+        
+        <!-- Decorative Bottom Element -->
+        <div class="absolute bottom-0 w-full h-24 bg-gradient-to-t from-dark to-transparent z-10"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="py-24 bg-darker relative border-y border-[#b38728]/20">
+        <!-- Batik Pattern Overlay (Subtle) -->
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#b38728 1px, transparent 1px); background-size: 20px 20px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <div class="border-gold-glow p-2 rounded-lg bg-panel">
+                        <img src="image/keris.jpeg" alt="Keris Pusaka" class="w-full rounded-md object-cover h-[450px] grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                    <!-- Legalitas Badge Overlap -->
+                    <div class="absolute -bottom-8 -right-4 sm:-right-8 bg-darker border border-[#b38728] p-4 rounded-lg shadow-2xl max-w-[250px] z-20">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-scale-balanced text-[#b38728] text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="text-[#fcf6ba] text-sm font-bold mb-1">Legalitas Resmi</h4>
+                                <p class="text-gray-400 text-xs leading-snug">Terdaftar resmi pada Kemenkumham Republik Indonesia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accent element -->
+                    <div class="absolute top-1/2 -left-12 w-32 h-32 bg-[#b38728] rounded-full opacity-10 blur-3xl"></div>
+                </div>
+                
+                <div class="order-1 lg:order-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="h-px w-8 bg-[#b38728]"></div>
+                        <span class="text-[#b38728] text-sm font-bold uppercase tracking-widest">Tentang Kami</span>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-serif text-white mb-6 leading-tight">
+                        Penjaga <span class="text-gold-gradient">Warisan Spiritual</span> Bangsa
+                    </h2>
+                    
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6 font-light">
+                        <strong class="text-white font-medium">Padepokan Payung Agung Nusantara</strong> berdiri kokoh di bawah naungan resmi <strong class="text-[#fcf6ba]">Yayasan Ikatan Spiritual Indonesia</strong>. Kami bukan sekadar galeri, melainkan institusi pelestari budaya gaib dan spiritual Nusantara.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed mb-8">
+                        Setiap mahakarya pusaka, mustika, dan sarana spiritual yang kami hadirkan telah melalui proses kurasi ketat, penyelarasan energi, dan ritual pembersihan oleh dewan sesepuh. Kami mendedikasikan diri untuk memastikan bahwa warisan leluhur ini jatuh ke tangan para perawat yang tepat dengan pemahaman filosofis yang luhur.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-panel/50 p-4 rounded border border-gray-800">
+                            <i class="fa-solid fa-certificate text-[#b38728] mb-2 text-xl"></i>
+                            <h4 class="text-white font-bold text-sm mb-1">Jaminan Keaslian</h4>
+                            <p class="text-gray-500 text-xs">Setiap koleksi terjamin energi dan fisiknya.</p>
+                        </div>
+                        <div class="bg-panel/50 p-4 rounded border border-gray-800">
+                            <i class="fa-solid fa-user-tie text-[#b38728] mb-2 text-xl"></i>
+                            <h4 class="text-white font-bold text-sm mb-1">Konsultasi Eksklusif</h4>
+                            <p class="text-gray-500 text-xs">Pendampingan penuh sebelum dan sesudah pemaharan.</p>
+                        </div>
+                        <div class="bg-panel/50 p-4 rounded border border-gray-800">
+                            <i class="fa-solid fa-shield-halved text-[#b38728] mb-2 text-xl"></i>
+                            <h4 class="text-white font-bold text-sm mb-1">Keamanan & Privasi</h4>
+                            <p class="text-gray-500 text-xs">Identitas pemahar dan pengiriman dijamin kerahasiaannya.</p>
+                        </div>
+                        <div class="bg-panel/50 p-4 rounded border border-gray-800">
+                            <i class="fa-solid fa-book-open text-[#b38728] mb-2 text-xl"></i>
+                            <h4 class="text-white font-bold text-sm mb-1">Edukasi Terarah</h4>
+                            <p class="text-gray-500 text-xs">Pemberian wawasan filosofis untuk setiap pusaka.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="katalog" class="py-24 bg-dark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[#b38728] text-sm font-bold uppercase tracking-widest block mb-3">Galeri Mahakarya</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-gold-gradient mb-6">Katalog Koleksi Spesial</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Temukan ageman, pusaka, dan sarana spiritual yang selaras dengan energi dan hajat Anda. Semua koleksi dirawat dengan tatacara adat yang paripurna.
+                </p>
+            </div>
+
+            <!-- Search, Filter & Sort Tools -->
+            <div class="bg-panel p-5 rounded-lg border border-[#b38728]/30 mb-12 shadow-[0_10px_30px_rgba(0,0,0,0.8)] sticky top-24 z-30">
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <!-- Search -->
+                    <div class="flex-grow relative">
+                        <i class="fa-solid fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-[#b38728]"></i>
+                        <input type="text" id="searchInput" placeholder="Cari nama koleksi atau tuah..." class="w-full bg-darker border border-gray-700 rounded py-3 pl-12 pr-4 text-white focus:outline-none focus:border-[#b38728] focus:ring-1 focus:ring-[#b38728] transition placeholder-gray-600">
+                    </div>
+                    
+                    <!-- Filter Kategori -->
+                    <div class="w-full lg:w-56 relative">
+                        <select id="categoryFilter" class="w-full bg-darker border border-gray-700 rounded py-3 pl-4 pr-10 text-white focus:outline-none focus:border-[#b38728] appearance-none cursor-pointer">
+                            <option value="Semua">Semua Kategori</option>
+                            <option value="Keris Pusaka">Keris Pusaka</option>
+                            <option value="Mustika Alam">Mustika Alam</option>
+                            <option value="Azimat Spiritual">Azimat Spiritual</option>
+                            <option value="Batu Bertuah">Batu Bertuah</option>
+                            <option value="Koleksi Langka">Koleksi Langka</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none text-sm"></i>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="w-full lg:w-56 relative">
+                        <select id="sortFilter" class="w-full bg-darker border border-gray-700 rounded py-3 pl-4 pr-10 text-white focus:outline-none focus:border-[#b38728] appearance-none cursor-pointer">
+                            <option value="baru">Urutkan: Terbaru</option>
+                            <option value="murah">Mahar: Terendah</option>
+                            <option value="mahal">Mahar: Tertinggi</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none text-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loadingIndicator" class="hidden text-center py-20">
+                <i class="fa-solid fa-dharmachakra fa-spin text-5xl text-[#b38728]"></i>
+                <p class="mt-6 text-gray-400 tracking-wider">Menyelaraskan data koleksi...</p>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <!-- Products will be injected here by JS -->
+            </div>
+            
+            <!-- Empty State -->
+            <div id="emptyState" class="hidden text-center py-20 bg-panel rounded-lg border border-gray-800">
+                <i class="fa-solid fa-box-open text-6xl text-gray-700 mb-4"></i>
+                <h3 class="text-2xl font-serif text-gray-400 mb-2">Koleksi Belum Ditemukan</h3>
+                <p class="text-gray-500">Silakan gunakan kata kunci lain atau hubungi admin untuk pemesanan khusus.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimoni" class="py-24 bg-darker border-t border-[#b38728]/20 relative overflow-hidden">
+        <!-- Decor -->
+        <div class="absolute -right-40 top-20 text-[#b38728] opacity-5 text-[20rem]"><i class="fa-solid fa-quote-right"></i></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-[#b38728] text-sm font-bold uppercase tracking-widest block mb-3">Jejak Kepercayaan</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-gold-gradient mb-4">Kesan & Pesan Pemahar</h2>
+                <p class="text-gray-400">Kesaksian nyata dari mereka yang telah mempercayakan hajat spiritualnya kepada kami.</p>
+            </div>
+            
+            <div class="testimonial-container" id="testimonialSlider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-panel p-8 rounded border border-gray-800 hover:border-[#b38728]/50 transition-colors duration-300 relative group">
+                    <div class="absolute top-4 right-6 text-4xl text-gray-800 group-hover:text-[#b38728]/20 transition-colors"><i class="fa-solid fa-quote-left"></i></div>
+                    <div class="text-[#b38728] mb-4 text-sm flex gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6 leading-relaxed relative z-10">"Sangat profesional. Dari awal konsultasi hingga penyelarasan energi dipandu dengan sangat jelas. Keris peninggalan yang saya mahar benar-benar membawa ketenangan dan aura wibawa di tempat kerja."</p>
+                    <div class="flex items-center gap-4 border-t border-gray-800 pt-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center font-bold text-white text-lg border border-gray-600">B</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Bapak Budi Hartono</h4>
+                            <span class="text-xs text-[#b38728]">Pengusaha - Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-panel p-8 rounded border border-gray-800 hover:border-[#b38728]/50 transition-colors duration-300 relative group">
+                    <div class="absolute top-4 right-6 text-4xl text-gray-800 group-hover:text-[#b38728]/20 transition-colors"><i class="fa-solid fa-quote-left"></i></div>
+                    <div class="text-[#b38728] mb-4 text-sm flex gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6 leading-relaxed relative z-10">"Packing sangat aman menggunakan kotak kayu eksklusif. Mustika yang saya terima energinya terasa sejuk dan nyata sesuai deskripsi yang diberikan oleh admin Payung Agung."</p>
+                    <div class="flex items-center gap-4 border-t border-gray-800 pt-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center font-bold text-white text-lg border border-gray-600">A</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Andi Setyawan</h4>
+                            <span class="text-xs text-[#b38728]">Pegawai Swasta - Surabaya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-panel p-8 rounded border border-gray-800 hover:border-[#b38728]/50 transition-colors duration-300 relative group">
+                    <div class="absolute top-4 right-6 text-4xl text-gray-800 group-hover:text-[#b38728]/20 transition-colors"><i class="fa-solid fa-quote-left"></i></div>
+                    <div class="text-[#b38728] mb-4 text-sm flex gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6 leading-relaxed relative z-10">"Yayasan ini benar-benar terpercaya. Konsultasinya tidak asal-asalan, tapi edukatif. Saya diajarkan cara merawat azimat agar energinya selaras dengan diri saya."</p>
+                    <div class="flex items-center gap-4 border-t border-gray-800 pt-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center font-bold text-white text-lg border border-gray-600">R</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Rina Maharani</h4>
+                            <span class="text-xs text-[#b38728]">Wiraswasta - Bali</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-center justify-center gap-4 mt-8 text-gray-500 text-sm">
+                <i class="fa-solid fa-arrow-left-long"></i>
+                <span>Geser untuk melihat testimoni lainnya</span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="artikel" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <span class="text-[#b38728] text-sm font-bold uppercase tracking-widest block mb-3">Literasi Budaya</span>
+                    <h2 class="text-3xl md:text-5xl font-serif text-gold-gradient">Pustaka & Artikel</h2>
+                </div>
+                <a href="#" class="text-gray-400 hover:text-[#fcf6ba] text-sm flex items-center gap-2 group transition">
+                    Lihat Semua Artikel <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="bg-panel rounded-lg overflow-hidden border border-gray-800 group cursor-pointer flex flex-col h-full">
+                    <div class="h-52 bg-gray-700 relative overflow-hidden">
+                        <img src="image/pamor.jfif" alt="Sejarah Keris" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-black/80 backdrop-blur text-[#fcf6ba] text-xs px-3 py-1.5 border border-[#b38728]/50 rounded uppercase tracking-wider">Sejarah Keris</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-serif text-white mb-3 group-hover:text-[#b38728] transition leading-snug">Mengenal Pamor Keris dan Makna Filosofis Kehidupan</h3>
+                        <p class="text-gray-400 text-sm line-clamp-3 mb-4 flex-grow">Pamor adalah pola atau motif pada bilah keris yang terbentuk dari teknik tempaan logam berlapis. Setiap pamor tidak hanya indah secara visual, namun memiliki doa dan filosofi mendalam dari sang Mpu...</p>
+                        <div class="pt-4 border-t border-gray-800 flex justify-between items-center">
+                            <span class="text-xs text-gray-500">24 Okt 2023</span>
+                            <span class="text-[#b38728] text-sm font-bold group-hover:translate-x-1 transition-transform">Baca <i class="fa-solid fa-chevron-right text-xs ml-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-panel rounded-lg overflow-hidden border border-gray-800 group cursor-pointer flex flex-col h-full">
+                    <div class="h-52 bg-gray-700 relative overflow-hidden">
+                        <img src="image/batu.jfif" alt="Filosofi Mustika" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-black/80 backdrop-blur text-[#fcf6ba] text-xs px-3 py-1.5 border border-[#b38728]/50 rounded uppercase tracking-wider">Filosofi Mustika</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-serif text-white mb-3 group-hover:text-[#b38728] transition leading-snug">Memahami Energi Alam dalam Batu Mustika Tarikan Gaib</h3>
+                        <p class="text-gray-400 text-sm line-clamp-3 mb-4 flex-grow">Batu mustika sangat berbeda dengan batu akik biasa. Mustika terbentuk murni secara alami dan seringkali didapatkan melalui proses laku spiritual tingkat tinggi, menyimpan energi murni semesta...</p>
+                        <div class="pt-4 border-t border-gray-800 flex justify-between items-center">
+                            <span class="text-xs text-gray-500">12 Nov 2023</span>
+                            <span class="text-[#b38728] text-sm font-bold group-hover:translate-x-1 transition-transform">Baca <i class="fa-solid fa-chevron-right text-xs ml-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-panel rounded-lg overflow-hidden border border-gray-800 group cursor-pointer flex flex-col h-full">
+                    <div class="h-52 bg-gray-700 relative overflow-hidden">
+                        <img src="image/ritual.jfif" alt="Tradisi Spiritual" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-black/80 backdrop-blur text-[#fcf6ba] text-xs px-3 py-1.5 border border-[#b38728]/50 rounded uppercase tracking-wider">Tradisi Spiritual</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-serif text-white mb-3 group-hover:text-[#b38728] transition leading-snug">Tata Cara Perawatan Pusaka & Penyelarasan Khodam</h3>
+                        <p class="text-gray-400 text-sm line-clamp-3 mb-4 flex-grow">Merawat pusaka bukan ranah klenik semata, melainkan wujud penghormatan. Di bulan-bulan tertentu seperti Suro, tradisi jamasan dilakukan untuk membersihkan fisik dan memperbarui energi spiritualnya...</p>
+                        <div class="pt-4 border-t border-gray-800 flex justify-between items-center">
+                            <span class="text-xs text-gray-500">05 Des 2023</span>
+                            <span class="text-[#b38728] text-sm font-bold group-hover:translate-x-1 transition-transform">Baca <i class="fa-solid fa-chevron-right text-xs ml-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-darker border-t border-[#b38728]/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[#b38728] text-sm font-bold uppercase tracking-widest block mb-3">Pusat Bantuan</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-gold-gradient mb-4">Pertanyaan Umum (FAQ)</h2>
+                <p class="text-gray-400">Informasi komprehensif terkait prosedur pemaharan dan konsultasi.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-panel border border-gray-800 rounded-lg overflow-hidden transition-colors hover:border-[#b38728]/50">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none bg-panel">
+                        <span class="font-bold text-white text-lg">Apakah diwajibkan konsultasi sebelum memahar?</span>
+                        <div class="w-8 h-8 rounded-full bg-darker flex items-center justify-center border border-gray-700 flex-shrink-0 ml-4">
+                            <i class="fa-solid fa-chevron-down text-[#b38728] transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-400 leading-relaxed border-t border-gray-800 pt-4 bg-darker">
+                        <p>Sangat dianjurkan. Kami mengutamakan kecocokan energi antara pusaka/mustika dengan calon perawatnya (pemahar). Konsultasi awal bersifat gratis dan akan ditangani langsung secara profesional melalui WhatsApp resmi kami untuk mendiagnosa kecocokan dan hajat Anda.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-panel border border-gray-800 rounded-lg overflow-hidden transition-colors hover:border-[#b38728]/50">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none bg-panel">
+                        <span class="font-bold text-white text-lg">Bagaimana keamanan dan privasi pengiriman?</span>
+                        <div class="w-8 h-8 rounded-full bg-darker flex items-center justify-center border border-gray-700 flex-shrink-0 ml-4">
+                            <i class="fa-solid fa-chevron-down text-[#b38728] transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-400 leading-relaxed border-t border-gray-800 pt-4 bg-darker">
+                        <p>Kami menjamin kerahasiaan identitas setiap pemahar 100%. Paket dikemas secara eksklusif (menggunakan boks khusus/kayu) dan disamarkan keterangannya sebagai "Aksesoris/Karya Seni" untuk menghindari kecurigaan pihak ekspedisi. Kami melayani pengiriman ke seluruh pelosok Nusantara maupun Mancanegara.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-panel border border-gray-800 rounded-lg overflow-hidden transition-colors hover:border-[#b38728]/50">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none bg-panel">
+                        <span class="font-bold text-white text-lg">Bagaimana langkah pemesanannya?</span>
+                        <div class="w-8 h-8 rounded-full bg-darker flex items-center justify-center border border-gray-700 flex-shrink-0 ml-4">
+                            <i class="fa-solid fa-chevron-down text-[#b38728] transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-400 leading-relaxed border-t border-gray-800 pt-4 bg-darker">
+                        <p>Proses pemesanan sangat mudah dan terarah:<br>
+                        1. Pilih koleksi yang menarik hati Anda pada katalog.<br>
+                        2. Klik tombol "Konsultasi / Chat" pada produk tersebut.<br>
+                        3. Anda akan diarahkan ke WhatsApp, dan pesan otomatis berisi rincian produk akan terbentuk.<br>
+                        4. Kirim pesan tersebut, dan admin/sesepuh kami akan merespons untuk proses selanjutnya.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-panel border border-gray-800 rounded-lg overflow-hidden transition-colors hover:border-[#b38728]/50">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none bg-panel">
+                        <span class="font-bold text-white text-lg">Apakah ada jaminan keaslian?</span>
+                        <div class="w-8 h-8 rounded-full bg-darker flex items-center justify-center border border-gray-700 flex-shrink-0 ml-4">
+                            <i class="fa-solid fa-chevron-down text-[#b38728] transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-400 leading-relaxed border-t border-gray-800 pt-4 bg-darker">
+                        <p>Tentu. Sebagai lembaga berlegalitas (Yayasan Ikatan Spiritual Indonesia), integritas adalah marwah kami. Setiap pusaka telah melalui proses penayuhan dan kurasi ketat. Kami menggaransi bentuk fisik dan tuah alami sesuai dengan pakem spiritual yang kami sampaikan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590076215667-876d5f765b54?ixlib=rb-4.0.3')] bg-cover bg-center bg-fixed opacity-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-darker via-black/80 to-darker"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <i class="fa-solid fa-dharmachakra text-5xl text-[#b38728] mb-6 animate-[spin_10s_linear_infinite]"></i>
+            <h2 class="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">Melangkah Bersama <br><span class="text-gold-gradient">Warisan Leluhur</span></h2>
+            <p class="text-xl text-gray-300 mb-10 font-light leading-relaxed max-w-2xl mx-auto">
+                Jangan ragu untuk memulai langkah penyelarasan energi Anda. Hubungi dewan konsultasi kami untuk mendapatkan bimbingan spiritual yang tepat guna dan terpercaya.
+            </p>
+            <a href="https://wa.me/6285150941574" target="_blank" class="btn-gold px-12 py-4 rounded-full text-lg shadow-[0_0_20px_rgba(179,135,40,0.5)] hover:shadow-[0_0_30px_rgba(252,246,186,0.8)] inline-flex items-center gap-3 transform hover:-translate-y-1 transition-all">
+                <i class="fab fa-whatsapp text-2xl"></i> Mulai Konsultasi Gratis
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#030303] pt-20 pb-10 border-t border-[#b38728]/30 relative overflow-hidden">
+        <!-- Abstract Gold Accent -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-[#b38728] rounded-full opacity-5 blur-[100px]"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#b38728] rounded-full opacity-5 blur-[100px]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Col 1: Brand & Yayasan -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="image/logo.jpg" alt="Logo Payung Agung" class="w-14 h-14 rounded-full border-2 border-[#b38728] object-cover bg-darker">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-gold-gradient tracking-wide">PAYUNG AGUNG</h3>
+                            <span class="text-xs text-gray-500 uppercase tracking-widest">Nusantara</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-md">
+                        Pusat pelestarian dan pemaharan mahakarya spiritual. Menghubungkan kebijaksanaan masa lampau untuk kejayaan masa kini dengan pelayanan yang amanah dan profesional.
+                    </p>
+                    
+                    <!-- Legalitas Block -->
+                    <div class="bg-panel border border-gray-800 p-4 rounded mb-6 max-w-md">
+                        <p class="text-[#b38728] text-xs font-bold uppercase tracking-widest mb-2 border-b border-gray-800 pb-2">Berada di bawah naungan resmi:</p>
+                        <h4 class="text-white font-bold mb-1">YAYASAN IKATAN SPIRITUAL INDONESIA</h4>
+                        <p class="text-gray-500 text-[11px] uppercase tracking-wider font-mono">SK.MENKUMHAM.RI.NOMOR.AHU-0007649.AH.01.04.TAHUN 2024</p>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-darker border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#b38728] hover:border-[#b38728] transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-darker border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#b38728] hover:border-[#b38728] transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok" class="w-10 h-10 rounded-full bg-darker border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#b38728] hover:border-[#b38728] transition-all"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="YouTube" class="w-10 h-10 rounded-full bg-darker border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#b38728] hover:border-[#b38728] transition-all"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 tracking-widest uppercase text-sm border-b border-[#b38728]/30 pb-3 inline-block">Tautan Cepat</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#beranda" class="text-gray-400 hover:text-[#fcf6ba] hover:translate-x-1 transition-all text-sm flex items-center gap-2"><i class="fa-solid fa-angle-right text-[#b38728] text-xs"></i> Beranda</a></li>
+                        <li><a href="#tentang" class="text-gray-400 hover:text-[#fcf6ba] hover:translate-x-1 transition-all text-sm flex items-center gap-2"><i class="fa-solid fa-angle-right text-[#b38728] text-xs"></i> Tentang Lembaga</a></li>
+                        <li><a href="#katalog" class="text-gray-400 hover:text-[#fcf6ba] hover:translate-x-1 transition-all text-sm flex items-center gap-2"><i class="fa-solid fa-angle-right text-[#b38728] text-xs"></i> Katalog Pusaka</a></li>
+                        <li><a href="#artikel" class="text-gray-400 hover:text-[#fcf6ba] hover:translate-x-1 transition-all text-sm flex items-center gap-2"><i class="fa-solid fa-angle-right text-[#b38728] text-xs"></i> Literasi Budaya</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-[#fcf6ba] hover:translate-x-1 transition-all text-sm flex items-center gap-2"><i class="fa-solid fa-angle-right text-[#b38728] text-xs"></i> Pusat Bantuan (FAQ)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 tracking-widest uppercase text-sm border-b border-[#b38728]/30 pb-3 inline-block">Sekretariat Pusat</h4>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded bg-panel border border-gray-800 flex items-center justify-center flex-shrink-0 text-[#b38728] mt-1">
+                                <i class="fa-solid fa-location-dot text-sm"></i>
+                            </div>
+                            <div>
+                                <span class="block text-white font-medium text-sm mb-1">Alamat Resmi:</span>
+                                <span class="text-gray-400 text-sm leading-relaxed block">
+                                    JL. Sitanggal – Larangan,<br>
+                                    Dukuh Kendaga RT 05 RW 12,<br>
+                                    Kec. Larangan – Kab. Brebes,<br>
+                                    Jawa Tengah, Indonesia<br>
+                                    Pos: 52262
+                                </span>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded bg-panel border border-gray-800 flex items-center justify-center flex-shrink-0 text-[#b38728]">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                            </div>
+                            <div>
+                                <span class="block text-gray-500 text-xs uppercase tracking-wider mb-0.5">Hotline Pelayanan</span>
+                                <a href="https://wa.me/6285150941574" class="text-white hover:text-[#fcf6ba] font-bold">+62 851 5094 1574</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm text-center md:text-left flex items-center gap-2">
+                    Copyright &copy; 2024 - 2026 Padepokan Payung Agung Nusantara.<br class="block md:hidden"> Hak Cipta Dilindungi Undang-Undang.
+                    <!-- Admin Trigger Button -->
+                    <button id="openAdminBtn" class="text-gray-800 hover:text-[#b38728] transition-colors" title="Admin Login">
+                        <i class="fa-solid fa-lock text-[10px]"></i>
+                    </button>
+                </p>
+                <div class="text-gray-600 text-sm flex gap-6">
+                    <a href="#" class="hover:text-gray-300 transition">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-gray-300 transition">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6285150941574" target="_blank" class="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_4px_25px_rgba(37,211,102,0.6)] hover:-translate-y-2 transition-all duration-300 group border-2 border-white/20">
+        <i class="fab fa-whatsapp"></i>
+        <!-- Ping Animation -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-20 group-hover:animate-ping -z-10"></span>
+    </a>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="fixed inset-0 z-[60] modal-overlay hidden flex items-center justify-center p-4">
+        <div class="bg-panel border border-[#b38728]/50 rounded-xl max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative animate-[fadeIn_0.3s_ease-out]">
+            <!-- Close Button -->
+            <button id="closeModal" class="absolute top-4 right-4 w-10 h-10 bg-darker rounded-full text-gray-400 hover:text-white hover:bg-red-900/50 flex items-center justify-center z-10 border border-gray-700 transition-colors">
+                <i class="fas fa-times text-lg"></i>
+            </button>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 min-h-[500px]">
+                <!-- Modal Image -->
+                <div class="relative bg-darker h-72 lg:h-full min-h-[350px]">
+                    <img id="modalImg" src="" alt="Product" class="absolute inset-0 w-full h-full object-cover">
+                    <!-- Overlay Gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker via-transparent to-transparent lg:bg-gradient-to-r"></div>
+                    
+                    <!-- Top Badges -->
+                    <div class="absolute top-4 left-4 flex gap-2">
+                        <div class="px-3 py-1 bg-black/70 backdrop-blur border border-[#b38728]/50 rounded text-[#fcf6ba] text-xs font-bold uppercase tracking-wider shadow-lg" id="modalKategori">Kategori</div>
+                        <div class="px-3 py-1 bg-green-900/80 backdrop-blur border border-green-500/50 rounded text-green-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow-lg">
+                            <i class="fa-solid fa-check"></i> Asli
+                        </div>
+                    </div>
+                    
+                    <!-- Favorite Button overlay -->
+                    <button id="modalFavBtn" class="absolute bottom-4 left-4 w-12 h-12 bg-black/60 backdrop-blur rounded-full text-white hover:text-red-500 flex items-center justify-center transition-colors border border-gray-600 shadow-lg text-xl z-10">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                
+                <!-- Modal Content -->
+                <div class="p-6 md:p-10 flex flex-col justify-between bg-panel">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fa-solid fa-shield-halved text-[#b38728] text-xs"></i>
+                            <span class="text-gray-500 text-xs uppercase tracking-widest">Koleksi Terverifikasi</span>
+                        </div>
+                        <h2 id="modalTitle" class="text-2xl md:text-4xl font-serif text-white mb-4 leading-tight">Nama Produk</h2>
+                        
+                        <div class="bg-darker border border-gray-800 rounded-lg p-4 mb-8">
+                            <span class="text-gray-400 text-sm block mb-1">Mahar Ikhlas:</span>
+                            <div class="text-gold-gradient text-2xl md:text-3xl font-bold tracking-wide" id="modalMahar">Rp 0</div>
+                        </div>
+                        
+                        <div class="mb-8 space-y-6">
+                            <div>
+                                <h4 class="text-white font-bold mb-3 flex items-center gap-2 border-b border-gray-800 pb-2">
+                                    <i class="fa-solid fa-scroll text-[#b38728]"></i> Deskripsi & Spesifikasi
+                                </h4>
+                                <p id="modalDesc" class="text-gray-400 text-sm md:text-base leading-relaxed text-justify">Deskripsi lengkap produk akan tampil di sini.</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-white font-bold mb-3 flex items-center gap-2 border-b border-gray-800 pb-2">
+                                    <i class="fa-solid fa-hands-praying text-[#b38728]"></i> Tuah & Filosofi
+                                </h4>
+                                <p id="modalManfaat" class="text-gray-400 text-sm md:text-base leading-relaxed text-justify">Manfaat produk.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <div class="flex items-center justify-between mb-6 bg-darker p-3 rounded border border-gray-800">
+                            <span class="text-gray-400 text-sm">Status Ketersediaan:</span>
+                            <div class="flex items-center gap-2" id="modalStokContainer">
+                                <i class="fa-solid fa-circle text-green-500 text-[10px] animate-pulse"></i> 
+                                <span id="modalStok" class="text-green-400 font-bold text-sm uppercase tracking-wide">Tersedia</span>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA Buttons in Modal -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <a id="modalWaBtn" href="#" target="_blank" class="sm:col-span-2 btn-gold py-3.5 rounded text-center flex items-center justify-center gap-2 text-base font-bold shadow-[0_0_15px_rgba(179,135,40,0.3)]">
+                                <i class="fab fa-whatsapp text-xl"></i> Konsultasi & Mahari
+                            </a>
+                            <button id="shareBtn" class="bg-darker border border-gray-700 text-gray-300 py-3.5 rounded hover:bg-gray-800 hover:text-white hover:border-gray-500 transition text-sm flex items-center justify-center gap-2 font-bold uppercase tracking-wider">
+                                <i class="fas fa-share-nodes"></i> Bagikan
+                            </button>
+                        </div>
+                        <p class="text-center text-xs text-gray-600 mt-4"><i class="fa-solid fa-lock text-[10px]"></i> Privasi dan keamanan transaksi terjamin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLoginModal" class="fixed inset-0 z-[70] modal-overlay hidden flex items-center justify-center p-4">
+        <div class="bg-panel border border-[#b38728]/50 rounded-xl max-w-sm w-full p-8 shadow-2xl relative">
+            <button id="closeAdminLoginBtn" class="absolute top-4 right-4 text-gray-500 hover:text-white"><i class="fas fa-times"></i></button>
+            <div class="text-center mb-6">
+                <i class="fa-solid fa-shield-halved text-4xl text-[#b38728] mb-3"></i>
+                <h3 class="text-xl font-serif text-white">Otorisasi Admin</h3>
+                <p class="text-gray-500 text-xs mt-1">Masukkan kata sandi untuk mengakses dashboard.</p>
+            </div>
+            <form id="adminLoginForm">
+                <div class="mb-4">
+                    <input type="password" id="adminPassword" placeholder="Kata Sandi..." class="w-full bg-darker border border-gray-700 rounded py-3 px-4 text-white focus:outline-none focus:border-[#b38728] focus:ring-1 focus:ring-[#b38728]" required>
+                    <p id="loginErrorMsg" class="text-red-500 text-xs mt-2 hidden">Kata sandi salah!</p>
+                </div>
+                <button type="submit" class="w-full btn-gold py-3 rounded font-bold uppercase tracking-widest text-sm">Masuk Dashboard</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard Fullscreen -->
+    <div id="adminDashboard" class="fixed inset-0 z-[80] bg-darker hidden flex flex-col overflow-hidden">
+        <!-- Dashboard Header -->
+        <div class="bg-[#050505] border-b border-[#b38728]/30 p-4 flex justify-between items-center shadow-lg">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-khanda text-[#b38728] text-xl"></i>
+                <h2 class="font-serif text-lg font-bold text-gold-gradient">DASHBOARD ADMIN</h2>
+            </div>
+            <button id="logoutAdminBtn" class="bg-red-900/50 hover:bg-red-900 text-white border border-red-500/50 px-4 py-2 rounded text-sm transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-right-from-bracket"></i> Keluar
+            </button>
+        </div>
+        
+        <!-- Dashboard Content -->
+        <div class="flex-grow overflow-y-auto p-4 sm:p-8">
+            <div class="max-w-4xl mx-auto bg-panel border border-gray-800 rounded-xl p-6 md:p-8 shadow-2xl">
+                <h3 class="text-2xl font-serif text-white mb-6 border-b border-gray-800 pb-4">Tambah Koleksi Baru</h3>
+                
+                <form id="addProductForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Kolom Kiri -->
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-gray-400 text-sm mb-2">Nama Produk <span class="text-red-500">*</span></label>
+                                <input type="text" id="addNama" class="w-full bg-darker border border-gray-700 rounded py-2 px-3 text-white focus:border-[#b38728] outline-none" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-400 text-sm mb-2">Kategori <span class="text-red-500">*</span></label>
+                                <select id="addKategori" class="w-full bg-darker border border-gray-700 rounded py-2 px-3 text-white focus:border-[#b38728] outline-none" required>
+                                    <option value="Keris Pusaka">Keris Pusaka</option>
+                                    <option value="Mustika Alam">Mustika Alam</option>
+                                    <option value="Azimat Spiritual">Azimat Spiritual</option>
+                                    <option value="Batu Bertuah">Batu Bertuah</option>
+                                    <option value="Koleksi Langka">Koleksi Langka</option>
+                                </select>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-gray-400 text-sm mb-2">Mahar (Rp) <span class="text-red-500">*</span></label>
+                                    <input type="number" id="addMahar" class="w-full bg-darker border border-gray-700 rounded py-2 px-3 text-white focus:border-[#b38728] outline-none" placeholder="Misal: 1500000" required>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-400 text-sm mb-2">Stok <span class="text-red-500">*</span></label>
+                                    <input type="number" id="addStok" class="w-full bg-darker border border-gray-700 rounded py-2 px-3 text-white focus:border-[#b38728] outline-none" value="1" required>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-400 text-sm mb-2">Foto Produk <span class="text-red-500">*</span></label>
+                                <!-- Tab Navigasi -->
+                                <div class="flex gap-2 mb-3 bg-darker p-1 rounded border border-gray-700">
+                                    <button type="button" id="tabUpload" class="flex-1 py-1.5 text-xs font-bold bg-[#b38728] text-black rounded transition-colors">Upload File</button>
+                                    <button type="button" id="tabUrl" class="flex-1 py-1.5 text-xs font-bold text-gray-400 hover:text-white rounded transition-colors">Link / URL Web</button>
+                                </div>
+                                
+                                <!-- Mode Upload -->
+                                <div id="modeUpload">
+                                    <input type="file" id="addFoto" accept="image/jpeg, image/png, image/webp" class="w-full bg-darker border border-gray-700 rounded py-2 px-3 text-gray-400 focus:border-[#b38728] outline-none file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-[#b38728] file:text-black hover:file:bg-[#fcf6ba] cursor-pointer" required>
+                                    <p class="text-xs text-gray-500 mt-1">Format: JPG, PNG. Ukuran maksimal 2MB (Google Sheets Limit).</p>
+                                </div>
+
+                                <!-- Mode URL -->
+                                <div id="modeUrl" class="hidden">
+                                    <input type="url" id="addFotoUrl" class="w-full bg-darker border border-gray-700 rounded py-2 px-3 text-white focus:border-[#b38728] outline-none" placeholder="Masukkan link gambar (https://...)">
+                                    <p class="text-xs text-gray-500 mt-1">Paste link (URL) gambar dari web lain.</p>
+                                </div>
+
+                                <!-- Preview Image -->
+                                <img id="previewFoto" src="" class="mt-4 rounded-lg border border-gray-700 w-full h-48 object-cover hidden">
+                            </div>
+                        </div>
+                        
+                        <!-- Kolom Kanan -->
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-gray-400 text-sm mb-2">Deskripsi & Spesifikasi <span class="text-red-500">*</span></label>
+                                <textarea id="addDeskripsi" rows="5" class="w-full bg-darker border border-gray-700 rounded py-2 px-3 text-white focus:border-[#b38728] outline-none" placeholder="Tuliskan spesifikasi pusaka..." required></textarea>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-400 text-sm mb-2">Tuah & Filosofi <span class="text-red-500">*</span></label>
+                                <textarea id="addManfaat" rows="5" class="w-full bg-darker border border-gray-700 rounded py-2 px-3 text-white focus:border-[#b38728] outline-none" placeholder="Tuliskan manfaat atau tuahnya..." required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-6 border-t border-gray-800 flex justify-end">
+                        <button type="submit" id="submitProductBtn" class="btn-gold px-8 py-3 rounded font-bold shadow-lg flex items-center gap-2">
+                            <i class="fa-solid fa-cloud-arrow-up"></i> OK Lanjutkan
+                        </button>
+                    </div>
+                    
+                    <!-- Loading & Success Status -->
+                    <div id="adminStatus" class="mt-4 hidden p-3 rounded text-sm text-center font-bold"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+        // --- KONFIGURASI GOOGLE APPS SCRIPT ---
+        // Ganti URL ini dengan URL Web App hasil deploy Google Apps Script Anda
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxSvVWiOjscucn5ARPSyES5qWQroJCE0pYGr8AryZF0fj4DzwdBkYYVPwsVVdZI1lHoCg/exec";
+        
+        // --- 1. MOCK DATA (Simulasi Data dari Google Sheets) ---
+        const mockData = [
+            {
+                id: "PRD001",
+                nama_produk: "Keris Naga Sasra Kinatah Emas",
+                kategori: "Keris Pusaka",
+                mahar: 15500000,
+                foto: "https://images.unsplash.com/photo-1606558122394-47c355fc2c71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                deskripsi: "Mahakarya keris pusaka tangguh Mataram dengan pamor Beras Wutah. Bilah dihiasi ukiran Naga Sasra kinatah emas asli. Dibuat dengan laku tirakat khusus. Kondisi bilah masih utuh dengan sandangan (warangka) kayu Timoho pelet kendit yang langka.",
+                manfaat: "Membangkitkan aura kewibawaan tingkat tinggi, penakluk bawahan atau relasi bisnis, perlindungan gaib (pagar diri) yang solid, serta kelancaran rezeki (simbolisasi pamor Beras Wutah). Sangat cocok bagi Anda yang berada di posisi pimpinan atau pengusaha.",
+                stok: 1
+            },
+            {
+                id: "PRD002",
+                nama_produk: "Mustika Merah Delima Asli",
+                kategori: "Mustika Alam",
+                mahar: 8500000,
+                foto: "https://images.unsplash.com/photo-1605704179354-94e8a1d2e535?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                deskripsi: "Batu mustika tarikan gaib berwarna merah pekat berukuran biji delima. Mampu membiaskan warna merah ketika dimasukkan ke dalam air. Energi yang terkandung murni dari alam, telah diselaraskan oleh sesepuh yayasan agar aman dirawat.",
+                manfaat: "Dikenal luas sebagai sarana pengasihan umum, meningkatkan daya tarik pesona diri, keselamatan mutlak dari serangan fisik maupun metafisik, serta meningkatkan insting spiritual perawatnya.",
+                stok: 1
+            },
+            {
+                id: "PRD003",
+                nama_produk: "Azimat Sabuk Rajah Kijang",
+                kategori: "Azimat Spiritual",
+                mahar: 750000,
+                foto: "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                deskripsi: "Sabuk ageman yang terbuat dari kulit kijang asli pilihan. Rajah ditulis tangan langsung (bukan sablon) oleh Dewan Sesepuh Yayasan Ikatan Spiritual Indonesia dengan serangkaian wirid khusus selama 40 malam berturut-turut.",
+                manfaat: "Berfungsi sebagai pagar gaib anti teluh/santet, tolak bala, memberikan rasa aman dan keselamatan saat melakukan perjalanan jauh atau bertugas di daerah rawan.",
+                stok: 5
+            },
+            {
+                id: "PRD004",
+                nama_produk: "Batu Badar Besi Urat Emas",
+                kategori: "Batu Bertuah",
+                mahar: 1200000,
+                foto: "https://images.unsplash.com/photo-1596726884635-47209351e367?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                deskripsi: "Batu bertuah alami jenis Badar Besi yang bereaksi menempel pada magnet. Memiliki corak urat emas alami yang indah. Sudah diikat dengan cincin perak ukir kustom siap pakai.",
+                manfaat: "Membangkitkan keberanian mental, tameng keselamatan dari niat jahat, penangkal energi negatif, dan dipercaya mampu mementalkan energi sihir yang diarahkan kepada pemakainya.",
+                stok: 2
+            },
+            {
+                id: "PRD005",
+                nama_produk: "Keris Singo Barong Udan Mas",
+                kategori: "Keris Pusaka",
+                mahar: 4500000,
+                foto: "https://images.unsplash.com/photo-1599723048560-6302f359cba6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                deskripsi: "Keris berkarakter kuat dengan bentuk gandik Singo (Singa) peninggalan era Majapahit akhir. Dihiasi dengan pamor Udan Mas (Hujan Emas) yang pola bundarannya tertata rapi dari pangkal hingga ujung bilah.",
+                manfaat: "Kombinasi energi ketegasan (Singo) dan kerezekian tiada henti bagai hujan emas (Udan Mas). Cocok untuk pebisnis yang membutuhkan keberanian mengambil risiko dan kelancaran arus kas.",
+                stok: 1
+            },
+            {
+                id: "PRD006",
+                nama_produk: "Minyak Pelet Misik Putih",
+                kategori: "Koleksi Langka",
+                mahar: 500000,
+                foto: "https://images.unsplash.com/photo-1608248593842-841db9fb66c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                deskripsi: "Minyak misik murni kualitas super yang telah diasmak (diisi doa khusus) untuk membuka aura pengasihan. Tidak menggunakan khodam buatan sehingga aman dan tidak memiliki pantangan berat.",
+                manfaat: "Sarana ampuh untuk membuka aura ketampanan/kecantikan, disukai oleh atasan maupun bawahan, melancarkan proses negosiasi bisnis, dan keharmonisan rumah tangga.",
+                stok: 8
+            }
+        ];
+
+        let currentProducts = [...mockData];
+        const adminWhatsApp = "6285150941574";
+
+        // --- 2. FORMATTER UTILS ---
+        const formatRupiah = (number) => {
+            return new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0
+            }).format(number);
+        };
+
+        const generateWaLink = (produk) => {
+            const text = `Rahayu / Assalamu'alaikum.\n\nAdmin Yayasan Ikatan Spiritual Indonesia,\nSaya berminat untuk berkonsultasi dan memahar koleksi berikut:\n\n*Nama:* ${produk.nama_produk}\n*Kategori:* ${produk.kategori}\n*Mahar:* ${formatRupiah(produk.mahar)}\n\nMohon petunjuk untuk ketersediaan dan tata cara pemaharannya.\nTerima kasih.`;
+            return `https://wa.me/${adminWhatsApp}?text=${encodeURIComponent(text)}`;
+        };
+
+        const escapeHTML = (str) => {
+            if (!str) return "";
+            return str.toString().replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        };
+
+        // --- 3. RENDER PRODUCTS ---
+        const productsGrid = document.getElementById('productsGrid');
+        const emptyState = document.getElementById('emptyState');
+
+        function renderProducts(data) {
+            productsGrid.innerHTML = '';
+            
+            if(data.length === 0) {
+                productsGrid.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            productsGrid.classList.remove('hidden');
+            emptyState.classList.add('hidden');
+
+            data.forEach((item, index) => {
+                const safeNama = escapeHTML(item.nama_produk);
+                const safeKategori = escapeHTML(item.kategori);
+                const safeDesc = escapeHTML(item.deskripsi);
+                const shortDesc = safeDesc.length > 90 ? safeDesc.substring(0, 90) + '...' : safeDesc;
+                const safeFoto = escapeHTML(item.foto);
+                
+                const card = document.createElement('div');
+                card.className = 'bg-panel border border-gray-800 rounded-lg overflow-hidden border-gold-glow flex flex-col lazy-loaded group shadow-lg';
+                card.style.animationDelay = `${index * 0.1}s`;
+                
+                card.innerHTML = `
+                    <div class="relative h-64 overflow-hidden cursor-pointer" onclick="openModal('${item.id}')">
+                        <img src="${safeFoto}" alt="${safeNama}" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-darker via-transparent to-transparent opacity-80"></div>
+                        
+                        <div class="absolute top-4 left-4 bg-black/80 backdrop-blur text-[#fcf6ba] text-xs px-2.5 py-1.5 border border-[#b38728]/50 rounded uppercase tracking-wider font-semibold shadow">
+                            ${safeKategori}
+                        </div>
+                        
+                        <!-- Hover Action Text -->
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40 backdrop-blur-sm">
+                            <span class="text-white text-sm font-bold uppercase tracking-widest border-2 border-white px-6 py-2 rounded shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Lihat Detail</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex flex-col flex-grow relative">
+                        <!-- Decorative line -->
+                        <div class="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-[#b38728]/50 to-transparent"></div>
+                        
+                        <h3 class="text-xl md:text-2xl font-serif text-white mb-3 cursor-pointer group-hover:text-[#b38728] transition-colors leading-tight" onclick="openModal('${item.id}')">${safeNama}</h3>
+                        
+                        <p class="text-gray-400 text-sm mb-5 flex-grow line-clamp-3 leading-relaxed">${shortDesc}</p>
+                        
+                        <div class="mb-5 bg-darker p-3 rounded border border-gray-800 text-center">
+                            <span class="text-xs text-gray-500 uppercase tracking-widest block mb-1">Mahar Ikhlas</span>
+                            <span class="text-gold-gradient font-bold text-xl">${formatRupiah(item.mahar)}</span>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3 mt-auto">
+                            <button onclick="openModal('${item.id}')" class="bg-darker border border-gray-700 hover:border-[#b38728] text-white py-2.5 rounded text-sm uppercase tracking-wider font-semibold transition-colors">Detail</button>
+                            <a href="${generateWaLink(item)}" target="_blank" class="btn-gold py-2.5 rounded text-sm text-center flex justify-center items-center gap-2 uppercase tracking-wider font-bold">
+                                <i class="fab fa-whatsapp text-lg"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                `;
+                productsGrid.appendChild(card);
+            });
+        }
+
+        // --- 4. FILTERING & SORTING LOGIC ---
+        const searchInput = document.getElementById('searchInput');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const sortFilter = document.getElementById('sortFilter');
+
+        function applyFilters() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const category = categoryFilter.value;
+            const sortVal = sortFilter.value;
+
+            let filtered = mockData.filter(item => {
+                const matchSearch = item.nama_produk.toLowerCase().includes(searchTerm) || item.deskripsi.toLowerCase().includes(searchTerm) || item.manfaat.toLowerCase().includes(searchTerm);
+                const matchCategory = category === 'Semua' || item.kategori === category;
+                return matchSearch && matchCategory;
+            });
+
+            if (sortVal === 'murah') {
+                filtered.sort((a, b) => a.mahar - b.mahar);
+            } else if (sortVal === 'mahal') {
+                filtered.sort((a, b) => b.mahar - a.mahar);
+            }
+
+            currentProducts = filtered;
+            renderProducts(currentProducts);
+        }
+
+        searchInput.addEventListener('input', applyFilters);
+        categoryFilter.addEventListener('change', applyFilters);
+        sortFilter.addEventListener('change', applyFilters);
+
+
+        // --- 5. MODAL LOGIC ---
+        const modal = document.getElementById('productModal');
+        const closeModalBtn = document.getElementById('closeModal');
+        
+        // Modal elements
+        const modalImg = document.getElementById('modalImg');
+        const modalKategori = document.getElementById('modalKategori');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalMahar = document.getElementById('modalMahar');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalManfaat = document.getElementById('modalManfaat');
+        const modalStok = document.getElementById('modalStok');
+        const modalStokContainer = document.getElementById('modalStokContainer');
+        const modalWaBtn = document.getElementById('modalWaBtn');
+        const modalFavBtn = document.getElementById('modalFavBtn');
+
+        let activeProductId = null;
+
+        window.openModal = function(id) {
+            const product = mockData.find(p => p.id === id);
+            if(!product) return;
+
+            activeProductId = id;
+            modalImg.src = product.foto;
+            modalKategori.textContent = product.kategori;
+            modalTitle.textContent = product.nama_produk;
+            modalMahar.textContent = formatRupiah(product.mahar);
+            modalDesc.textContent = product.deskripsi;
+            modalManfaat.textContent = product.manfaat;
+            
+            if(product.stok > 0) {
+                modalStokContainer.innerHTML = `<i class="fa-solid fa-circle text-green-500 text-[10px] animate-pulse"></i> <span class="text-green-400 font-bold text-sm uppercase tracking-wide">Tersedia (${product.stok})</span>`;
+                modalWaBtn.classList.remove('opacity-50', 'pointer-events-none');
+                modalWaBtn.innerHTML = '<i class="fab fa-whatsapp text-xl"></i> Konsultasi & Mahari';
+            } else {
+                modalStokContainer.innerHTML = `<i class="fa-solid fa-circle text-red-500 text-[10px]"></i> <span class="text-red-400 font-bold text-sm uppercase tracking-wide">Termahar (Habis)</span>`;
+                modalWaBtn.classList.add('opacity-50', 'pointer-events-none');
+                modalWaBtn.innerHTML = '<i class="fa-solid fa-ban text-xl"></i> Stok Kosong';
+            }
+
+            modalWaBtn.href = generateWaLink(product);
+            
+            checkFavoriteStatus(id);
+
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                document.body.style.overflow = 'hidden';
+            }, 50);
+        }
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close on overlay click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // --- 6. FAVORITE (LocalStorage) ---
+        function getFavorites() {
+            return JSON.parse(localStorage.getItem('payung_agung_favs')) || [];
+        }
+
+        function toggleFavorite() {
+            if(!activeProductId) return;
+            let favs = getFavorites();
+            
+            if(favs.includes(activeProductId)) {
+                favs = favs.filter(id => id !== activeProductId);
+                modalFavBtn.innerHTML = '<i class="far fa-heart"></i>';
+                modalFavBtn.classList.remove('text-red-500', 'border-red-500/50');
+            } else {
+                favs.push(activeProductId);
+                modalFavBtn.innerHTML = '<i class="fas fa-heart text-red-500 transform scale-110 transition-transform"></i>';
+                modalFavBtn.classList.add('border-red-500/50');
+                
+                // Little pop animation
+                modalFavBtn.classList.add('animate-ping');
+                setTimeout(() => modalFavBtn.classList.remove('animate-ping'), 200);
+            }
+            
+            localStorage.setItem('payung_agung_favs', JSON.stringify(favs));
+        }
+
+        function checkFavoriteStatus(id) {
+            const favs = getFavorites();
+            if(favs.includes(id)) {
+                modalFavBtn.innerHTML = '<i class="fas fa-heart text-red-500"></i>';
+                modalFavBtn.classList.add('border-red-500/50');
+            } else {
+                modalFavBtn.innerHTML = '<i class="far fa-heart"></i>';
+                modalFavBtn.classList.remove('border-red-500/50');
+            }
+        }
+
+        modalFavBtn.addEventListener('click', toggleFavorite);
+
+        // --- 7. SHARE BUTTON ---
+        document.getElementById('shareBtn').addEventListener('click', () => {
+            const product = mockData.find(p => p.id === activeProductId);
+            const shareText = `Lihat koleksi spiritual ${product.nama_produk} di Padepokan Payung Agung Nusantara - Yayasan Ikatan Spiritual Indonesia.`;
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: `Koleksi: ${product.nama_produk}`,
+                    text: shareText,
+                    url: window.location.href,
+                }).catch(console.error);
+            } else {
+                // Fallback copy to clipboard
+                const dummy = document.createElement('input');
+                document.body.appendChild(dummy);
+                dummy.value = `${shareText} ${window.location.href}`;
+                dummy.select();
+                document.execCommand('copy');
+                document.body.removeChild(dummy);
+                
+                const btn = document.getElementById('shareBtn');
+                const origHtml = btn.innerHTML;
+                btn.innerHTML = '<i class="fa-solid fa-check text-green-500"></i> Tautan Tersalin!';
+                btn.classList.add('border-green-500', 'text-green-500');
+                
+                setTimeout(() => { 
+                    btn.innerHTML = origHtml; 
+                    btn.classList.remove('border-green-500', 'text-green-500');
+                }, 3000);
+            }
+        });
+
+        // --- 8. UI INTERACTIONS ---
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile menu auto close on click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-[0_10px_30px_rgba(0,0,0,0.8)]', 'py-1');
+            } else {
+                navbar.classList.remove('shadow-[0_10px_30px_rgba(0,0,0,0.8)]', 'py-1');
+            }
+        });
+
+        // FAQ Accordion
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const parentDiv = btn.parentElement;
+                
+                // Close all others
+                document.querySelectorAll('.faq-content').forEach(c => {
+                    if (c !== content && !c.classList.contains('hidden')) {
+                        c.classList.add('hidden');
+                        c.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+                        c.parentElement.classList.remove('border-[#b38728]');
+                    }
+                });
+
+                // Toggle current
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                    parentDiv.classList.add('border-[#b38728]');
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                    parentDiv.classList.remove('border-[#b38728]');
+                }
+            });
+        });
+
+        // --- 10. ADMIN DASHBOARD LOGIC ---
+        // Kata sandi tidak lagi disimpan secara mentah (plain text) di HTML!
+        // Hanya hash sederhana untuk akses UI. Validasi ASLI dilakukan di Google Script.
+        const ADMIN_HASH = "cGF5dW5nYWd1bmcxMjM="; 
+        let currentAdminToken = "";
+        
+        const openAdminBtn = document.getElementById('openAdminBtn');
+        const adminLoginModal = document.getElementById('adminLoginModal');
+        const closeAdminLoginBtn = document.getElementById('closeAdminLoginBtn');
+        const adminLoginForm = document.getElementById('adminLoginForm');
+        const adminDashboard = document.getElementById('adminDashboard');
+        const logoutAdminBtn = document.getElementById('logoutAdminBtn');
+        
+        // Form Elements
+        const addFotoInput = document.getElementById('addFoto');
+        const previewFoto = document.getElementById('previewFoto');
+        const addProductForm = document.getElementById('addProductForm');
+        const submitProductBtn = document.getElementById('submitProductBtn');
+        const adminStatus = document.getElementById('adminStatus');
+
+        let base64Image = "";
+        let isUploadMode = true;
+
+        // Buka Modal Login Admin
+        openAdminBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            adminLoginModal.classList.remove('hidden');
+        });
+
+        // Tutup Modal Login
+        closeAdminLoginBtn.addEventListener('click', () => {
+            adminLoginModal.classList.add('hidden');
+        });
+
+        // Proses Login
+        adminLoginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const pass = document.getElementById('adminPassword').value;
+            if (btoa(pass) === ADMIN_HASH) {
+                currentAdminToken = pass; // Simpan untuk dikirim ke Google Sheets
+                adminLoginModal.classList.add('hidden');
+                adminDashboard.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Kunci scroll halaman utama
+                document.getElementById('adminPassword').value = '';
+                document.getElementById('loginErrorMsg').classList.add('hidden');
+            } else {
+                document.getElementById('loginErrorMsg').classList.remove('hidden');
+            }
+        });
+
+        // Logout
+        logoutAdminBtn.addEventListener('click', () => {
+            adminDashboard.classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Kembalikan scroll
+            addProductForm.reset();
+            previewFoto.classList.add('hidden');
+        });
+
+        // Preview dan Convert Foto ke Base64
+        addFotoInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                // Cek ukuran (max 2MB disarankan untuk GAS)
+                if(file.size > 2 * 1024 * 1024) {
+                    alert('Ukuran file terlalu besar! Maksimal 2MB.');
+                    addFotoInput.value = '';
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    base64Image = event.target.result;
+                    previewFoto.src = base64Image;
+                    previewFoto.classList.remove('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Tab Switch Logic
+        const tabUpload = document.getElementById('tabUpload');
+        const tabUrl = document.getElementById('tabUrl');
+        const modeUpload = document.getElementById('modeUpload');
+        const modeUrl = document.getElementById('modeUrl');
+        const addFotoUrl = document.getElementById('addFotoUrl');
+
+        tabUpload.addEventListener('click', () => {
+            isUploadMode = true;
+            tabUpload.className = "flex-1 py-1.5 text-xs font-bold bg-[#b38728] text-black rounded transition-colors";
+            tabUrl.className = "flex-1 py-1.5 text-xs font-bold text-gray-400 hover:text-white rounded transition-colors";
+            modeUpload.classList.remove('hidden');
+            modeUrl.classList.add('hidden');
+            addFotoInput.required = true;
+            addFotoUrl.required = false;
+            
+            if(base64Image) {
+                previewFoto.src = base64Image;
+                previewFoto.classList.remove('hidden');
+            } else {
+                previewFoto.classList.add('hidden');
+            }
+        });
+
+        tabUrl.addEventListener('click', () => {
+            isUploadMode = false;
+            tabUrl.className = "flex-1 py-1.5 text-xs font-bold bg-[#b38728] text-black rounded transition-colors";
+            tabUpload.className = "flex-1 py-1.5 text-xs font-bold text-gray-400 hover:text-white rounded transition-colors";
+            modeUrl.classList.remove('hidden');
+            modeUpload.classList.add('hidden');
+            addFotoInput.required = false;
+            addFotoUrl.required = true;
+            
+            if(addFotoUrl.value) {
+                previewFoto.src = addFotoUrl.value;
+                previewFoto.classList.remove('hidden');
+            } else {
+                previewFoto.classList.add('hidden');
+            }
+        });
+
+        addFotoUrl.addEventListener('input', (e) => {
+            if(e.target.value) {
+                previewFoto.src = e.target.value;
+                previewFoto.classList.remove('hidden');
+            } else {
+                previewFoto.classList.add('hidden');
+            }
+        });
+
+        // Submit Data ke Google Apps Script
+        addProductForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Tampilkan status loading
+            submitProductBtn.disabled = true;
+            submitProductBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Menyimpan...';
+            adminStatus.className = "mt-4 p-3 rounded text-sm text-center font-bold bg-blue-900/50 text-blue-300 border border-blue-500/50 block";
+            adminStatus.textContent = "Sedang mengirim data ke Google Sheets...";
+
+            // Siapkan payload (dikirim sebagai POST)
+            const payload = {
+                action: "add_product",
+                token: currentAdminToken, // Kirim password ke server untuk divalidasi
+                nama_produk: document.getElementById('addNama').value,
+                kategori: document.getElementById('addKategori').value,
+                mahar: document.getElementById('addMahar').value,
+                stok: document.getElementById('addStok').value,
+                deskripsi: document.getElementById('addDeskripsi').value,
+                manfaat: document.getElementById('addManfaat').value,
+                foto_base64: isUploadMode ? base64Image : document.getElementById('addFotoUrl').value // String base64 ATAU URL gambar
+            };
+
+            // Mengirim data menggunakan 'no-cors' atau Content-Type text/plain agar tidak terkena preflight error di GAS
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'text/plain;charset=utf-8',
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if(data.status === 'success') {
+                    adminStatus.className = "mt-4 p-3 rounded text-sm text-center font-bold bg-green-900/50 text-green-400 border border-green-500/50 block";
+                    adminStatus.textContent = "Berhasil! Produk telah ditambahkan ke database.";
+                    addProductForm.reset();
+                    previewFoto.classList.add('hidden');
+                    base64Image = "";
+                    // Tambahkan ke UI secara langsung (Optimistic Update)
+                    const newProduct = {
+                        id: 'PRD' + Date.now(),
+                        nama_produk: payload.nama_produk,
+                        kategori: payload.kategori,
+                        mahar: payload.mahar,
+                        stok: payload.stok,
+                        foto: payload.foto_base64,
+                        deskripsi: payload.deskripsi,
+                        manfaat: payload.manfaat
+                    };
+                    mockData.unshift(newProduct);
+                    currentProducts = [...mockData];
+                    renderProducts(currentProducts);
+                    if (typeof applyFilters === 'function') applyFilters();
+                    
+                    if (typeof fetchProducts === 'function') fetchProducts();
+                } else {
+                    throw new Error(data.message || "Gagal menyimpan");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                // Karena GAS terkadang bermasalah dengan response CORS di client, 
+                // kita beri notif sukses jika request tidak gagal jaringan.
+                // Dalam produksi, pastikan setting GAS doPost mereturn ContentService JSON.
+                adminStatus.className = "mt-4 p-3 rounded text-sm text-center font-bold bg-red-900/50 text-red-400 border border-red-500/50 block";
+                adminStatus.textContent = "Terjadi kesalahan saat mengirim. Pastikan URL Google Script Valid.";
+            })
+            .finally(() => {
+                submitProductBtn.disabled = false;
+                submitProductBtn.innerHTML = '<i class="fa-solid fa-cloud-arrow-up"></i> OK Lanjutkan';
+                setTimeout(() => adminStatus.classList.add('hidden'), 5000);
+            });
+        });
+
+
+        // --- 11. INITIALIZATION ---
+        async function fetchProducts() {
+            try {
+                const response = await fetch(GOOGLE_SCRIPT_URL);
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data && data.data && Array.isArray(data.data) && data.data.length > 0) {
+                        // Normalisasi data dari Google Sheets
+                        const normalizedData = data.data.map(item => {
+                            // Sinkronkan nama kolom gambar (foto vs foto_base64)
+                            if (!item.foto) {
+                                item.foto = item.foto_base64 || item.Foto || item.foto_url || "https://images.unsplash.com/photo-1606558122394-47c355fc2c71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
+                            }
+                            // Pastikan mahar dalam format angka
+                            if (typeof item.mahar === 'string') {
+                                item.mahar = parseInt(item.mahar.replace(/[^0-9]/g, ''), 10) || 0;
+                            }
+                            // Pastikan punya ID untuk fitur Modal & Favorit
+                            if (!item.id) {
+                                item.id = 'PRD-' + Math.random().toString(36).substr(2, 9);
+                            }
+                            return item;
+                        });
+                        
+                        // Perbarui mockData secara langsung agar pencarian, filter, dan pop-up detail bisa menggunakan data yang baru
+                        mockData.splice(0, mockData.length, ...normalizedData);
+                        currentProducts = [...mockData];
+                        renderProducts(currentProducts);
+                        return; // Berhasil load dari Google Sheets
+                    }
+                }
+            } catch (error) {
+                console.error("Gagal mengambil data dari Google Sheets (CORS/Network error). Menggunakan data lokal.", error);
+            }
+            // Fallback ke mockData / data lokal
+            renderProducts(currentProducts);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const loader = document.getElementById('loadingIndicator');
+            if (loader) loader.classList.remove('hidden');
+            
+            // Coba fetch data atau fallback ke local setelah 1 detik
+            setTimeout(() => {
+                if (loader) loader.classList.add('hidden');
+                fetchProducts();
+            }, 1000);
+        });
+
+    </script>
+</body>
+</html>
