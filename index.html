@@ -254,6 +254,72 @@
         <div class="absolute bottom-0 w-full h-24 bg-gradient-to-t from-dark to-transparent z-10"></div>
     </section>
 
+    <!-- Catalog Section -->
+    <section id="katalog" class="py-24 bg-dark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[#b38728] text-sm font-bold uppercase tracking-widest block mb-3">Galeri Mahakarya</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-gold-gradient mb-6">Katalog Koleksi Spesial</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Temukan ageman, pusaka, dan sarana spiritual yang selaras dengan energi dan hajat Anda. Semua koleksi dirawat dengan tatacara adat yang paripurna.
+                </p>
+            </div>
+
+            <!-- Search, Filter & Sort Tools -->
+            <div class="bg-panel p-5 rounded-lg border border-[#b38728]/30 mb-12 shadow-[0_10px_30px_rgba(0,0,0,0.8)] sticky top-24 z-30">
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <!-- Search -->
+                    <div class="flex-grow relative">
+                        <i class="fa-solid fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-[#b38728]"></i>
+                        <input type="text" id="searchInput" placeholder="Cari nama koleksi atau tuah..." class="w-full bg-darker border border-gray-700 rounded py-3 pl-12 pr-4 text-white focus:outline-none focus:border-[#b38728] focus:ring-1 focus:ring-[#b38728] transition placeholder-gray-600">
+                    </div>
+                    
+                    <!-- Filter Kategori -->
+                    <div class="w-full lg:w-56 relative">
+                        <select id="categoryFilter" class="w-full bg-darker border border-gray-700 rounded py-3 pl-4 pr-10 text-white focus:outline-none focus:border-[#b38728] appearance-none cursor-pointer">
+                            <option value="Semua">Semua Kategori</option>
+                            <option value="Keris Pusaka">Keris Pusaka</option>
+                            <option value="Mustika Alam">Mustika Alam</option>
+                            <option value="Azimat Spiritual">Azimat Spiritual</option>
+                            <option value="Batu Bertuah">Batu Bertuah</option>
+                            <option value="Koleksi Langka">Koleksi Langka</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none text-sm"></i>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="w-full lg:w-56 relative">
+                        <select id="sortFilter" class="w-full bg-darker border border-gray-700 rounded py-3 pl-4 pr-10 text-white focus:outline-none focus:border-[#b38728] appearance-none cursor-pointer">
+                            <option value="baru">Urutkan: Terbaru</option>
+                            <option value="murah">Mahar: Terendah</option>
+                            <option value="mahal">Mahar: Tertinggi</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none text-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loadingIndicator" class="hidden text-center py-20">
+                <i class="fa-solid fa-dharmachakra fa-spin text-5xl text-[#b38728]"></i>
+                <p class="mt-6 text-gray-400 tracking-wider">Menyelaraskan data koleksi...</p>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <!-- Products will be injected here by JS -->
+            </div>
+            
+            <!-- Empty State -->
+            <div id="emptyState" class="hidden text-center py-20 bg-panel rounded-lg border border-gray-800">
+                <i class="fa-solid fa-box-open text-6xl text-gray-700 mb-4"></i>
+                <h3 class="text-2xl font-serif text-gray-400 mb-2">Koleksi Belum Ditemukan</h3>
+                <p class="text-gray-500">Silakan gunakan kata kunci lain atau hubungi admin untuk pemesanan khusus.</p>
+            </div>
+
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="tentang" class="py-24 bg-darker relative border-y border-[#b38728]/20">
         <!-- Batik Pattern Overlay (Subtle) -->
@@ -319,72 +385,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Catalog Section -->
-    <section id="katalog" class="py-24 bg-dark relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-[#b38728] text-sm font-bold uppercase tracking-widest block mb-3">Galeri Mahakarya</span>
-                <h2 class="text-4xl md:text-5xl font-serif text-gold-gradient mb-6">Katalog Koleksi Spesial</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">
-                    Temukan ageman, pusaka, dan sarana spiritual yang selaras dengan energi dan hajat Anda. Semua koleksi dirawat dengan tatacara adat yang paripurna.
-                </p>
-            </div>
-
-            <!-- Search, Filter & Sort Tools -->
-            <div class="bg-panel p-5 rounded-lg border border-[#b38728]/30 mb-12 shadow-[0_10px_30px_rgba(0,0,0,0.8)] sticky top-24 z-30">
-                <div class="flex flex-col lg:flex-row gap-4">
-                    <!-- Search -->
-                    <div class="flex-grow relative">
-                        <i class="fa-solid fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-[#b38728]"></i>
-                        <input type="text" id="searchInput" placeholder="Cari nama koleksi atau tuah..." class="w-full bg-darker border border-gray-700 rounded py-3 pl-12 pr-4 text-white focus:outline-none focus:border-[#b38728] focus:ring-1 focus:ring-[#b38728] transition placeholder-gray-600">
-                    </div>
-                    
-                    <!-- Filter Kategori -->
-                    <div class="w-full lg:w-56 relative">
-                        <select id="categoryFilter" class="w-full bg-darker border border-gray-700 rounded py-3 pl-4 pr-10 text-white focus:outline-none focus:border-[#b38728] appearance-none cursor-pointer">
-                            <option value="Semua">Semua Kategori</option>
-                            <option value="Keris Pusaka">Keris Pusaka</option>
-                            <option value="Mustika Alam">Mustika Alam</option>
-                            <option value="Azimat Spiritual">Azimat Spiritual</option>
-                            <option value="Batu Bertuah">Batu Bertuah</option>
-                            <option value="Koleksi Langka">Koleksi Langka</option>
-                        </select>
-                        <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none text-sm"></i>
-                    </div>
-
-                    <!-- Sort -->
-                    <div class="w-full lg:w-56 relative">
-                        <select id="sortFilter" class="w-full bg-darker border border-gray-700 rounded py-3 pl-4 pr-10 text-white focus:outline-none focus:border-[#b38728] appearance-none cursor-pointer">
-                            <option value="baru">Urutkan: Terbaru</option>
-                            <option value="murah">Mahar: Terendah</option>
-                            <option value="mahal">Mahar: Tertinggi</option>
-                        </select>
-                        <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none text-sm"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Loading State -->
-            <div id="loadingIndicator" class="hidden text-center py-20">
-                <i class="fa-solid fa-dharmachakra fa-spin text-5xl text-[#b38728]"></i>
-                <p class="mt-6 text-gray-400 tracking-wider">Menyelaraskan data koleksi...</p>
-            </div>
-
-            <!-- Products Grid -->
-            <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-                <!-- Products will be injected here by JS -->
-            </div>
-            
-            <!-- Empty State -->
-            <div id="emptyState" class="hidden text-center py-20 bg-panel rounded-lg border border-gray-800">
-                <i class="fa-solid fa-box-open text-6xl text-gray-700 mb-4"></i>
-                <h3 class="text-2xl font-serif text-gray-400 mb-2">Koleksi Belum Ditemukan</h3>
-                <p class="text-gray-500">Silakan gunakan kata kunci lain atau hubungi admin untuk pemesanan khusus.</p>
-            </div>
-
         </div>
     </section>
 
